@@ -1,26 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PackageId>SimplyWorks.PdfTemplarClient</PackageId>
     <Authors>Simplify9</Authors>
     <Product>SimplyWorks.PdfTemplar.Client</Product>
-    <PackageProjectUrl>https://github.com/simplify9/PdfTemplarClient</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/simplify9/PdfTemplarClient</RepositoryUrl>
+    <Description>A .NET client SDK for PdfTemplar service that generates PDF documents from templates and data objects. Supports configurable JSON naming strategies and comprehensive error handling. See GitHub repository for full documentation and usage examples.</Description>
+    <PackageTags>pdf;template;generator;document;client;sdk</PackageTags>
+    <PackageProjectUrl>https://github.com/simplify9/SW-PdfTemplar-Client</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/simplify9/SW-PdfTemplar-Client</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <Copyright>Simplify9</Copyright>
     <Company>Simplify9</Company>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
     <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="../icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="../README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
